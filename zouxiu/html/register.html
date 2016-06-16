@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册—走秀网</title>
+		<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/gytw.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script src="../js/jquery-1.12.4.min.js"></script>
+	</head>
+	<body>
+<!--*******************Ajax引用头************-->
+	<script>
+		$.ajax({
+			// 方式
+			type:'GET',
+			url:'commod/header.html',
+			// 页面加载时就取数据 故同步
+			async:false,
+			success:function(msg){
+				console.log(msg);
+				$('body').append(msg);
+			}
+		})
+	</script>
+<!--*******************内容************-->
+	<div class="contentbox">
+		<div class="content">
+			<div class="register_form">
+				<div class="yhzc">
+					<h3>用户注册</h3>
+					<span><a href="javascript:;">注册即送800元</a></span>
+				</div>
+				<div class="form_box">
+					<form action="">
+						<ul>
+							<li class="mb">
+								<div>
+									<label for="mphone" class="tit"><em>*</em>手  机  号：</label>
+								</div>
+								<div class="tbox">
+									<input type="text" name="mphone" id="mphone" value="" />
+								</div>
+								<div class="notice_box">
+									<p class="not">请输入手机号</p>
+									<p class="err"><s></s>请输入正确的手机号</p>
+									<p class="ok"><s></s>该手机号可用</p>
+								</div>
+							</li>
+							<li class="yzbtn">
+								<div>
+									<button type="button">获取验证码</button>
+								</div>
+							</li>
+							<li class="yztxt">
+								<div>
+									<label for="mphone" class="tit"><em>*</em>验  证  码：</label>
+								</div>
+								<div class="tbox">
+									<input type="text" name="mphone" id="yzm" value="" />
+								</div>
+								<div class="notice_box" id="yzm_notice">
+									<p class="not">请查收短信并输入验证码</p>
+									<p class="err"><s></s>请输入您收到的验证码</p>
+									<p class="ok"><s></s></p>
+								</div>
+							</li>
+							<li class="pw">
+								<div>
+									<label for="mphone" class="tit"><em>*</em>密&nbsp;&nbsp;码：</label>
+								</div>
+								<div class="tbox">
+									<input type="text" name="" id="pw" value="" />
+								</div>
+								<div class="notice_box" id="pw_notice">
+									<p class="not">密码为6-16个字符组成，区分大小写</p>
+									<p class="err"><s></s>请输入6-16位密码！</p>
+									<p class="ok"><s></s></p>
+								</div>
+							</li>
+							<li class="pw_strength">
+								<div>
+									<div>密码强度：</div>
+									<div class="strength_step">
+										<b id="step1"></b>
+										<b id="step2"></b>
+										<b id="step3"></b>
+									</div>
+								</div>
+							</li>
+							<li class="qrpw">
+								<div>
+									<label for="mphone" class="tit"><em>*</em>确认密码：</label>
+								</div>
+								<div class="tbox">
+									<input type="text" name="" id="qrpw" value="" />
+								</div>
+								<div class="notice_box" id="pw_notice">
+									<p class="not">请再次输入您的密码</p>
+									<p class="err"><s></s>与密码不一致</p>
+									<p class="k"><s></s>确认密码不能为空</p>
+									<p class="ok"><s></s></p>
+								</div>
+							</li>
+							<li class="emal">
+								<div>
+									<label for="mphone" class="tit">电子邮箱：</label>
+								</div>
+								<div class="tbox">
+									<input type="text" name="" id="emal" value="" />
+								</div>
+								<div class="notice_box" id="pw_notice">
+									<p class="not" style="background: #fff;border: none;"></p>
+									<p class="err"><s></s>您输入的邮箱格式不正确！</p>
+									<p class="ok"><s></s>该邮箱可用</p>
+								</div>
+							</li>
+							<li class="check">
+								<div>
+									<label for="yhxy">
+										<input type="checkbox" id="yhxy" checked="checked"/>
+										我已阅读并接受<a href="javascript:;">《走秀网用户协议》</a>
+									</label>
+								</div>
+							</li>
+							<li class="subbtn">
+								<div>
+									<button id="register_btn" type="button">同意协议并注册</button>
+									<div class="dl">已有账号？<a href="javascript:;">直接登录</a></div>
+								</div>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--*******************Ajax引用尾************-->
+	<script>
+		$.ajax({
+			type:'GET',
+			url:'commod/footer.html',
+			async:false,
+			success:function(msg){
+				$('body').append(msg);
+			}
+		})
+	</script>
+	<script src="../js/register.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

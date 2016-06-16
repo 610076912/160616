@@ -1,0 +1,11 @@
+/*------头部固定导航----------*/
+$(window).scroll(function(){
+	if($(document).scrollTop()>154){
+		$('#nav').css({'position':'fixed','top':0,'opacity':'.9','zIndex':999})
+		$('#navlistbox').css({'position':'fixed','top':44,'opacity':'.9','zIndex':999})
+	}
+	else{
+		$('#nav').css({'position':'static','opacity':'1'})
+		$('#navlistbox').css({'position':'static','opacity':'1'})
+	}
+})

@@ -1,0 +1,50 @@
+#header{
+	width: 100%;
+}
+.header{
+	width: 960px;
+	height: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header h1{
+	margin: 20px 0;
+	height: 52px;
+    overflow: hidden;
+}
+.header h1 .imglogo img{
+	display: block;
+}
+/*----------公用尾-------------*/
+.footerbox{
+	width: 100%;
+	margin-top: 100px;
+}
+.footer{
+	width: 960px;
+	margin: 0 auto;
+	border-top: 1px solid #e0e0e0;
+	text-align: center;
+}
+.flist{
+	width: 554px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.flist ul li{
+	float: left;
+}
+.flist ul li a {
+	padding: 0 10px;
+	color: #777;
+	border-right: 1px solid #777;
+}
+.flist ul li a:hover{
+	text-decoration: underline;
+}
+.copyright{
+	margin-top: 30px;
+	color: #777;
+	margin-bottom: 20px;
+}

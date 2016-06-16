@@ -1,0 +1,178 @@
+.contentbox{
+	width: 100%;
+	background: rgb(246, 246, 246) url(../img/iegister_bg.jpg) no-repeat;
+	height: 520px;
+	border-top: 1px solid #929292;
+}
+.content{
+	width: 960px;
+	height: 520px;
+	margin: 0 auto;
+	position: relative;
+}
+.register_form{
+	width: 646px;
+	height: 522px;
+	background: #FFF;
+	opacity: .9;
+	box-shadow: 3px 3px 5px #CCCCCC;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-left: 1px solid #BEBEBE;
+}
+.yhzc{
+	width: 576px;
+	border-bottom: 1px solid #BEBEBE;
+	margin: 0 20px;
+	padding: 15px 0 10px 30px;
+	overflow: hidden;
+}
+.yhzc h3{
+	font-size: 14px;
+	float: left;
+}
+.yhzc span{
+	float: right;
+}
+.yhzc span a{
+	color: red;
+}
+.yhzc span a:hover{
+	text-decoration: underline;
+}
+/*----------------表单-------------*/
+.form_box li{
+	margin-top: 10px;
+	height: 40px;
+}
+.tit{
+	width: 120px;
+	height: 37px;
+	line-height: 36px;
+	text-align: right;
+	display: block;
+	font-size: 14px;
+	float: left;
+}
+.tit em{
+	color: red;
+	margin-right: 5px;
+}
+.tbox{
+	width: 280px;
+	float: left;
+}
+.tbox input{
+	width: 266px;
+	height: 19px;
+	padding: 8px 5px;
+	border: 1px solid #a0a0a0;
+	font-size: 14px;
+}
+.notice_box{
+	width: 240px;
+	height: 36px;
+	float: left;
+	margin-left: 5px;
+}
+.notice_box p{
+	height: 34px;
+	border: 1px solid #efede0;
+	background-color: #fef8f8;
+	line-height: 34px;
+	padding: 0 10px;
+	float: left;
+	color: #666;
+	display: none;
+}
+.notice_box .err{
+	
+}
+.notice_box .err s{
+	background: url(../img/btnbg.png) no-repeat -280px 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-top: 8px;
+	margin-right: 2px;
+}
+.notice_box .k s{
+	background: url(../img/btnbg.png) no-repeat -280px 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-top: 8px;
+	margin-right: 2px;
+}
+.notice_box .ok s{
+	background: url(../img/btnbg.png) no-repeat -260px 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-top: 8px;
+	margin-right: 2px;
+}
+.yzbtn div{
+	margin-left: 120px;
+	height: 30px;
+}
+.yzbtn button{
+	width: 135px;
+	height: 28px;
+	border-radius: 3px;
+	border: 1px solid #999;
+	background: #f6f6f6;
+	color: #000000;
+	font-weight: 700;
+	cursor: pointer;
+}
+.form_box .pw_strength{
+	height: 14px;
+}
+.pw_strength>div{
+	margin-left: 120px;
+	display: inline-block;
+}
+.pw_strength>div>div{
+	float: left;
+	color: #666;
+}
+.strength_step{
+	margin-right: 10px;
+}
+.strength_step b{
+	width: 47px;
+	height: 10px;
+	background: #f0f0f0;
+	display: inline-block;
+}
+.check div{
+	margin-left: 120px;
+}
+.form_box .subbtn{
+	margin-top: 30px;
+}
+.subbtn>div{
+	margin-left: 120px;
+}
+#register_btn{
+	width: 160px;
+	height: 38px;
+	line-height: 36px;
+	border: 0 none;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #dd4b39;
+	color: #fff;
+	float: left;
+}
+.subbtn .dl{
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.form_box a{
+	color: #4D90C2;
+}
